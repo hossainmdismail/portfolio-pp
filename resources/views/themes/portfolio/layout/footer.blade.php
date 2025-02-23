@@ -32,7 +32,7 @@
 
                 <div class="info-item">
                     <h6 class="mb-10">Call Info</h6>
-                    <a class="text-upper" href="#">91 98241 82099</a>
+                    <a class="text-upper" href="#">+8801609041569</a>
                 </div>
 
                 <div class="info-item">
