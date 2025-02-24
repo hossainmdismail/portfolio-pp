@@ -17,6 +17,7 @@
     <title>KHAALIFA</title>
     <link href="{{ asset('themes/portfolio') }}/css/plugins.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('themes/portfolio') }}/css/style.css">
+    @yield('css')
 </head>
 
 <body class="v-dark dsn-ajax">

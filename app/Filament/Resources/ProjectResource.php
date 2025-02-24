@@ -8,22 +8,23 @@ use App\Models\Project;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\BadgeColumn;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Forms\Components\MarkdownEditor;
 use App\Filament\Resources\ProjectResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\ProjectResource\RelationManagers;
-use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\Group;
-use Filament\Forms\Components\RichEditor;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Toggle;
-use Filament\Tables\Columns\ImageColumn;
 
 class ProjectResource extends Resource
 {
@@ -40,16 +41,28 @@ class ProjectResource extends Resource
                         TextInput::make('title')
                             ->required()
                             ->placeholder('Make a title')
-                            ->maxLength(155),
+                            ->maxLength(155)
+                            ->columnSpan(2),
                         TagsInput::make('services')
-                            ->placeholder('Click enter to make services'),
+                            ->placeholder('Click enter to make services')
+                            ->columnSpan(1)
+                            ->required(),
                         TextInput::make('client')
                             ->label('Client name')
                             ->placeholder('Project client name')
                             ->maxLength(120)
-                            ->nullable(),
+                            ->nullable()
+                            ->required()
+                            ->columnSpan(1),
+                        TextInput::make('link')
+                            ->label('Link')
+                            ->url()
+                            ->rules(['url']) // Additional validation rule for URL format
+                            ->placeholder('https://example.com')
+                            ->columnSpan(2),
 
-                    ])->columnSpan(3),
+                    ])->columns(2)
+                        ->columnSpan(3),
                     Group::make()->schema([
                         FileUpload::make('thumbnail')
                             ->required()
@@ -58,11 +71,10 @@ class ProjectResource extends Resource
                             ->directory('project')
                             ->imagePreviewHeight('250')
                             ->imageEditor()
-                            ->maxSize(2048)
+                            ->maxSize(5048)
                             ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp'])
-                            ->imageResizeTargetWidth(890)
-                            ->imageResizeTargetHeight(890)
-                            ->imageCropAspectRatio('1:1')
+                            ->imageResizeTargetWidth(1920)
+                            ->imageResizeTargetHeight(1152)
                             ->imageResizeMode('cover'),
                         Toggle::make('status')
                             ->label('Status')
@@ -73,8 +85,17 @@ class ProjectResource extends Resource
                             ->inlineLabel()
                             ->default(true)
                             ->required(),
+
+                        Select::make('category_status')
+                            ->label('Category Status')
+                            ->options([
+                                'project' => 'Project',
+                                'casestudy' => 'Case Study',
+                            ])
+                            ->default('project')
+                            ->required(),
                     ])->columnSpan(1),
-                    RichEditor::make('content')
+                    MarkdownEditor::make('content')
                         ->required()
                         ->columnSpanFull(),
 

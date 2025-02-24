@@ -4,7 +4,12 @@
     @include('themes.portfolio.component.about')
     @include('themes.portfolio.component.skills')
     @include('themes.portfolio.component.education')
-    @include('themes.portfolio.component.portfolio')
-    @include('themes.portfolio.component.casestudy')
+    @if ($projects->count() > 0)
+        @include('themes.portfolio.component.portfolio', ['projects' => $projects])
+    @endif
+
+    @if ($casestudies->count() > 0)
+        @include('themes.portfolio.component.casestudy', ['casestudies' => $casestudies])
+    @endif
     @include('themes.portfolio.component.testimonial')
 @endsection

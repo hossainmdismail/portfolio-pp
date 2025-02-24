@@ -27,7 +27,7 @@
             <div class="d-flex gap-10 justify-content-between flex-wrap">
                 <div class="info-item">
                     <h6 class="mb-10">Email Address</h6>
-                    <a class="text-upper" href="#">hello@dsngrid.com</a>
+                    <a class="text-upper" href="#">hello@esmail.pro</a>
                 </div>
 
                 <div class="info-item">
@@ -36,11 +36,10 @@
                 </div>
 
                 <div class="info-item">
-                    <h6 class="mb-10">Skype</h6>
-                    <a class="text-upper" href="#">dsngrid.theme</a>
+                    <h6 class="mb-10">Telegram</h6>
+                    <a class="text-upper" href="https://t.me/esmailpro">esmailpro</a>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -49,10 +48,10 @@
             <div class="d-grid grid-md-3 align-items-center">
                 <div class="links">
                     <ul class="d-flex">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">WORK</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="{{ route('home') }}">HOME</a></li>
+                        <li><a href="{{ route('about') }}">ABOUT</a></li>
+                        <li><a href="{{ route('contact') }}">WORK</a></li>
+                        <li><a href="{{ route('contact') }}">CONTACT</a></li>
                     </ul>
                 </div>
 
@@ -69,9 +68,9 @@
 
                 <div class="copyright">
                     <p class="over-hidden">
-                        © 2024 Digital Agency Designed by
-                        <a href="#0" class="link-hover" data-hover-text="DSN Grid" target="_blank">DSN
-                            Grid</a>
+                        © 2025 Copyright
+                        <a href="https://esmail.pro" class="link-hover" data-hover-text="DSN Grid"
+                            target="_blank">Esmail K.</a>
                     </p>
                 </div>
             </div>

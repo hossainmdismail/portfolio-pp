@@ -14,8 +14,10 @@ return new class extends Migration
             $table->string('thumbnail', 120);
             $table->string('services', 300); // array
             $table->longText('content');
+            $table->string('link', 120)->nullable();
             $table->string('client', 120)->nullable();
             $table->enum('status', ['active', 'deactive'])->default('active');
+            $table->enum('category_status', ['project', 'casestudy'])->default('project');
             $table->string('seo_title', 150)->nullable();
             $table->string('seo_description', 400)->nullable();
             $table->string('seo_tags', 400)->nullable(); //array

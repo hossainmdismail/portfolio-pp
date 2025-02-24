@@ -87,9 +87,7 @@
                         </div>
 
                         <div class="bottom">
-                            <p>Copyright © 2022, {{ $configData->name }}. Developed by <a
-                                    style="font-size: 12px !important"
-                                    href="https://www.linkedin.com/in/md-ismail-hossain-911a96236/">Khaalifa</a></p>
+                            <p>Copyright © 2025</p>
 
                         </div>
                     </div>
