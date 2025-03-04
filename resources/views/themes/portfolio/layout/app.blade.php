@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap" rel="stylesheet">
-    <link rel="icon" href="{{ asset('themes/portfolio') }}/img/logo-32x32.html" sizes="32x32" />
-    <link rel="icon" href="{{ asset('themes/portfolio') }}/img/logo-192x192.html" sizes="192x192" />
+    <link rel="icon" href="{{ asset('themes/portfolio/img/esmail-logo.png') }}" sizes="192x192" />
     <title>KHAALIFA</title>
     <link href="{{ asset('themes/portfolio') }}/css/plugins.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('themes/portfolio') }}/css/style.css">
