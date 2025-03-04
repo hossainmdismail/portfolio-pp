@@ -19,14 +19,14 @@
                     </li>
 
                     <li class="nav-item has-sub-menu">
-                        <a title="Home" href="#0">
-                            <span class="overflow ">Portfolio</span>
+                        <a title="Projects" href="{{ route('projects.view') }}">
+                            <span class="overflow ">Projects</span>
                         </a>
                     </li>
 
                     <li class="nav-item has-sub-menu">
-                        <a title="Home" href="#0">
-                            <span class="overflow ">Works</span>
+                        <a title="Case Study" href="{{ route('casetudy.view') }}">
+                            <span class="overflow ">Case Study</span>
                         </a>
                     </li>
 

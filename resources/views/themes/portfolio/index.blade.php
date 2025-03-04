@@ -3,7 +3,7 @@
 @section('content')
     @include('themes.portfolio.component.about')
     @include('themes.portfolio.component.skills')
-    @include('themes.portfolio.component.education')
+    {{-- @include('themes.portfolio.component.education') --}}
     @if ($projects->count() > 0)
         @include('themes.portfolio.component.portfolio', ['projects' => $projects])
     @endif

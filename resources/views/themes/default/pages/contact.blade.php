@@ -70,17 +70,13 @@
 
                         <ul class="dsn-socials box-social">
                             <li>
-                                <a href="#0" target="_blank" class="background-main">
-                                    <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
+                                <a href="https://www.linkedin.com/in/md-ismail-hossain-911a96236/" target="_blank"
+                                    class="background-section">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i> <span>LN</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#0" target="_blank" class="background-main">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0" target="_blank" class="background-main">
+                                <a href="https://x.com/esmailkhaalifa" target="_blank" class="background-main">
                                     <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                                 </a>
                             </li>
@@ -191,23 +187,14 @@
 
                             <ul class="dsn-socials box-social">
                                 <li>
-                                    <a href="#0" target="_blank" class="background-section">
-                                        <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0" target="_blank" class="background-section">
-                                        <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0" target="_blank" class="background-section">
+                                    <a href="https://x.com/esmailkhaalifa" target="_blank" class="background-section">
                                         <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#0" target="_blank" class="background-section">
+                                    <a href="https://www.linkedin.com/in/md-ismail-hossain-911a96236/" target="_blank"
+                                        class="background-section">
                                         <i class="fab fa-linkedin" aria-hidden="true"></i> <span>LN</span>
                                     </a>
                                 </li>
