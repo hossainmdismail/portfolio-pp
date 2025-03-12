@@ -21,7 +21,7 @@
                     </div>
 
                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                        <a href="{{ route('project.view', $project->id) }}" class="effect-ajax init-color"
+                        <a href="{{ route('project.view', $project->slug) }}" class="effect-ajax init-color"
                             data-dsn-ajax="work">{{ $project->title }}</a>
                     </h2>
 

@@ -15,6 +15,7 @@
     <link rel="icon" href="{{ asset('themes/portfolio/img/esmail-logo.png') }}" sizes="192x192" />
     <title>KHAALIFA</title>
     <link href="{{ asset('themes/portfolio') }}/css/plugins.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('themes/portfolio/css/extra.css') }}">
     <link rel="stylesheet" href="{{ asset('themes/portfolio') }}/css/style.css">
     @yield('css')
 </head>

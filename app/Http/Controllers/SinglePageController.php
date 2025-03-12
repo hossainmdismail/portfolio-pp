@@ -9,10 +9,10 @@ class SinglePageController extends Controller
 {
     public function about()
     {
-        return view('themes.default.pages.about');
+        return view('themes.portfolio.pages.about');
     }
     public function contact()
     {
-        return view('themes.default.pages.contact');
+        return view('themes.portfolio.pages.contact');
     }
 }

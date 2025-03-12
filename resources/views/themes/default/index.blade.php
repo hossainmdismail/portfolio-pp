@@ -36,7 +36,7 @@
                                             </svg>
                                             <div>
                                                 <a
-                                                    href="{{ route('project.view', $project->id) }}">{{ $project->title }}</a>
+                                                    href="{{ route('project.view', $project->slug) }}">{{ $project->title }}</a>
                                                 <h6 class="price">{{ $project->created_at->format('d-m y') }}</h6>
                                             </div>
                                         </div>
@@ -446,7 +446,7 @@
                         </div>
 
                         <!-- <div class="icon"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="icon bottom"></div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="icon bottom"></div> -->
 
 
                     </div>

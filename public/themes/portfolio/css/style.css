@@ -74,6 +74,27 @@
   --bg-btn: #0a0909;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 1rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0A0A0A;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 1rem;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
 @media only screen and (max-width: 991px) {
   .v-dark-head-mobile {
     --bg-color: #111;

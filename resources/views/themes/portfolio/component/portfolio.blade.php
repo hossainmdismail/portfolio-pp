@@ -60,7 +60,7 @@
 
                                                     <div class="post-info">
                                                         <h2 class="post-title word-wrap d-inline-block title-block">
-                                                            <a href="{{ route('project.view', $project->id) }}"
+                                                            <a href="{{ route('project.view', $project->slug) }}"
                                                                 class="effect-ajax init-color"
                                                                 data-dsn-ajax="work"><span
                                                                     style="font-size: 14px">{{ $project->client }}</span>

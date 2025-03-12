@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
 use Filament\Tables;
 use App\Models\Project;
 use Filament\Forms\Form;
@@ -19,12 +18,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\RichEditor;
-use Illuminate\Database\Eloquent\Builder;
 use Filament\Forms\Components\MarkdownEditor;
 use App\Filament\Resources\ProjectResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\ProjectResource\RelationManagers;
 
 class ProjectResource extends Resource
 {
@@ -42,6 +37,11 @@ class ProjectResource extends Resource
                             ->required()
                             ->placeholder('Make a title')
                             ->maxLength(155)
+                            ->columnSpan(2),
+                        TextInput::make('slug')
+                            ->required()
+                            ->placeholder('Unique slug')
+                            ->maxLength(255)
                             ->columnSpan(2),
                         TagsInput::make('services')
                             ->placeholder('Click enter to make services')

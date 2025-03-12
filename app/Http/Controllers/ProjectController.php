@@ -10,9 +10,10 @@ class ProjectController extends Controller
 {
     public function view($slug)
     {
-        $project = Project::find($slug);
+        $project = Project::where('slug', $slug)->first();
+
         if ($project) {
-            return view('themes.default.pages.project', [
+            return view('themes.portfolio.pages.project', [
                 'project' => $project,
             ]);
         }
@@ -21,7 +22,7 @@ class ProjectController extends Controller
     public function projects()
     {
         $projects = Project::where('category_status', 'project')->get();
-        return view('themes.default.pages.projects', [
+        return view('themes.portfolio.pages.projects', [
             'projects' => $projects,
             'type' => 'project',
         ]);
@@ -30,7 +31,7 @@ class ProjectController extends Controller
     public function casetudy()
     {
         $projects = Project::where('category_status', 'casestudy')->get();
-        return view('themes.default.pages.projects', [
+        return view('themes.portfolio.pages.projects', [
             'projects' => $projects,
             'type' => 'casestudy',
         ]);

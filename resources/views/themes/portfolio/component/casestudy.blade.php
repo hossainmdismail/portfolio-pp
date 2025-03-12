@@ -32,7 +32,8 @@
                                                 <div
                                                     class="post-info d-flex justify-content-between align-items-center">
                                                     <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-1.html" class="effect-ajax init-color"
+                                                        <a href="{{ route('project.view', $casestudy->slug) }}"
+                                                            class="effect-ajax init-color"
                                                             data-dsn-ajax="work">{{ $casestudy->title }}</a>
                                                     </h2>
 
@@ -43,7 +44,7 @@
                                                         @endforeach
                                                     </div>
 
-                                                    <a href="project-1.html"
+                                                    <a href="{{ route('project.view', $casestudy->slug) }}"
                                                         class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                         <span class="icon background-section">
                                                             <svg xmlns="http://www.w3.org/2000/svg"
