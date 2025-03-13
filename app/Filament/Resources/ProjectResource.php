@@ -18,6 +18,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Forms\Components\MarkdownEditor;
 use App\Filament\Resources\ProjectResource\Pages;
 
@@ -127,6 +128,12 @@ class ProjectResource extends Resource
                 TextColumn::make('title')->limit(50),
                 ImageColumn::make('thumbnail'),
                 TextColumn::make('client')->label('Client')->limit(30),
+                TextColumn::make('category_status')
+                    ->badge()
+                    ->color(fn(string $state): string => match ($state) {
+                        'project' => 'warning',
+                        'casestudy' => 'success',
+                    }),
                 BadgeColumn::make('status')
                     ->formatStateUsing(function (string $state): string {
                         return $state === 'active' ? 'Active' : 'Deactive';
@@ -137,7 +144,18 @@ class ProjectResource extends Resource
                 TextColumn::make('created_at')->label('Created At')->date(),
             ])
             ->filters([
-                //
+                SelectFilter::make('status')
+                    ->options([
+                        'active' => 'Active',
+                        'deactive' => 'Deactive',
+                    ])
+                    ->attribute('status'),
+                SelectFilter::make('category_status')
+                    ->options([
+                        'project' => 'Project',
+                        'casestudy' => 'Case Study',
+                    ])
+                    ->attribute('category_status'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

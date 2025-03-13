@@ -166,3 +166,9 @@ ol {
 ul {
     list-style-type: disc;
 }
+
+@media (max-width: 590px) {
+    .custom-tag {
+        display: none;
+    }
+}
