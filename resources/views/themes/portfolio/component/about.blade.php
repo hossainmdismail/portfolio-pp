@@ -33,9 +33,9 @@
 
 
              <div class="w-50 ml-auto">
-                 <p class="max-w570 mt-30  dsn-up">OUR EXPERTISE IN LARAVEL PHP DEVELOPMENT AND WEBFLOW
-                     DESIGN IS THE FOUNDATION OF OUR SUCCESS. WITH YEARS OF EXPERIENCE BUILDING SCALABLE
-                     WEB APPLICATIONS AND STUNNING WEBSITES, WE’VE HONED OUR SKILLS TO PERFECTION.
+                 <p class="max-w570 mt-30  dsn-up">MY EXPERTISE IN WEBFLOW AND LARAVEL PHP DEVELOPMENT
+                     IS THE FOUNDATION OF MY SUCCESS. WITH YEARS OF EXPERIENCE BUILDING SCALABLE
+                     WEB APPLICATIONS AND STUNNING WEBSITES, I’VE HONED MY SKILLS TO PERFECTION.
                  </p>
 
                  <div class="dsn-up">

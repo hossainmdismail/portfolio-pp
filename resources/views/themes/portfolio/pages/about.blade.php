@@ -16,9 +16,8 @@
                     <h2 class="title text-upper text-right">I Obsessively Create Impactful Digital Solutions</h2>
                     <div class="">
                         <h5 class="sub-heading">The Studio</h5>
-                        <p class="description-box max-w350 mt-15">I drive success by delivering cutting-edge Laravel,
-                            Webflow, and API development services, crafting versatile solutions that help companies grow and
-                            innovate.</p>
+                        <p class="description-box max-w350 mt-15">I drive success by delivering cutting-edge Webflow
+                            development services, crafting versatile solutions that help companies grow and innovate.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +61,7 @@
 
                 <div class="grid-item">
                     <div class="image-item h-100">
-                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc2.jpg"
+                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc5.jpg"
                             alt="">
                     </div>
                 </div>
@@ -75,14 +74,14 @@
                 data-dsn-option='{"speed":1,"start":"100%","end":"0%","pin":false}'>
                 <div class="grid-item">
                     <div class="image-item h-100">
-                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc1.jpg"
+                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc7.jpg"
                             alt="">
                     </div>
                 </div>
 
                 <div class="grid-item">
                     <div class="image-item h-100">
-                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc2.jpg"
+                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc8.jpg"
                             alt="">
                     </div>
                 </div>

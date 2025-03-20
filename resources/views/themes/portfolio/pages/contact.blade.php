@@ -20,8 +20,9 @@
                         <h1 class="title-lg text-upper">CONTACT US</h1>
 
                         <div class="contact-links d-flex flex-column w-50 mt-50">
-                            <a href="#"
-                                class="sm-title-block text-upper d-flex justify-content-between align-items-center">marketing@example.com
+                            <a href="mailto:hello@esmail.pro"
+                                class="sm-title-block text-upper d-flex justify-content-between align-items-center"
+                                target="_blank">hello@esmail.pro
                                 <span class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                         <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -29,8 +30,19 @@
                                     </svg>
                                 </span>
                             </a>
-                            <a href="#"
-                                class="sm-title-block text-upper d-flex justify-content-between align-items-center">office@example.com
+                            <a href="https://www.upwork.com/freelancers/~018ae8da89391f7845?mp_source=share"
+                                class="sm-title-block text-upper d-flex justify-content-between align-items-center"
+                                target="_blank">UpWork
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="https://www.fiverr.com/s/7YrABYe"
+                                class="sm-title-block text-upper d-flex justify-content-between align-items-center"
+                                target="_blank">Fiverr
                                 <span class="icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                         <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -172,7 +184,7 @@
                                             <div class="d-flex dsn-up w-100">
                                                 <div class="image-zoom move-circle w-100" data-dsn="parallax">
                                                     <input class="background-theme w-100" type="submit"
-                                                        value="Send Message">
+                                                        value="Not Available" disabled="disabled" />
                                                 </div>
                                             </div>
                                         </div>
@@ -206,8 +218,8 @@
             </div>
 
             <!-- ========== Map  ========== -->
-            <div class="map-custom hv-80" data-dsn-lat="51.5073509" data-dsn-len="-0.1277583" data-dsn-zoom="14">
-            </div>
+            {{-- <div class="map-custom hv-80" data-dsn-lat="51.5073509" data-dsn-len="-0.1277583" data-dsn-zoom="14">
+            </div> --}}
         </div>
 
     </div>
