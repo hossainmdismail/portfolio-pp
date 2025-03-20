@@ -88,21 +88,21 @@
 
                 <div class="grid-item">
                     <div class="image-item h-100">
-                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc3.jpg"
+                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc6.jpg"
                             alt="">
                     </div>
                 </div>
 
                 <div class="grid-item">
                     <div class="image-item h-100">
-                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc4.jpg"
+                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc7.jpg"
                             alt="">
                     </div>
                 </div>
 
                 <div class="grid-item">
                     <div class="image-item h-100">
-                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc3.jpg"
+                        <img class="cover-bg-img has-border-radius" src="{{ asset('themes/portfolio') }}/img/img-arc8.jpg"
                             alt="">
                     </div>
                 </div>
@@ -125,6 +125,49 @@
                 <div class="section-title d-flex flex-column mb-70 dsn-fill">
                     <h2 class="title">10 years <br> of experience</h2>
                 </div>
+
+                <div class="award-item p-relative dsn-up">
+                    <div class="d-grid grid-half-1">
+                        <div class="date">Webflow Layouts Level 1 - 2022</div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <h4 class="title-block mb-5">Certified</h4>
+                                <p>Webflow Partner Certification exam</p>
+                            </div>
+                            <img src="{{ asset('themes/portfolio') }}/img/awwards/c-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item p-relative dsn-up">
+                    <div class="d-grid grid-half-1">
+                        <div class="date">Webflow CMS Certification - 2022</div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <h4 class="title-block mb-5">Certified</h4>
+                                <p>Webflow Partner Certification exam</p>
+                            </div>
+                            <img src="{{ asset('themes/portfolio') }}/img/awwards/c-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-item p-relative dsn-up">
+                    <div class="d-grid grid-half-1">
+                        <div class="date">Webflow 101 Certification - 2022</div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <h4 class="title-block mb-5">Certified</h4>
+                                <p>Webflow Partner Certification exam</p>
+                            </div>
+                            <img src="{{ asset('themes/portfolio') }}/img/awwards/c-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="award-item p-relative dsn-up">
                     <div class="d-grid grid-half-1">
