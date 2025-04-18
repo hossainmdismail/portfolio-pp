@@ -21,7 +21,7 @@ class ProjectController extends Controller
 
     public function projects()
     {
-        $projects = Project::where('category_status', 'project')->get();
+        $projects = Project::where('category_status', 'project')->latest()->get();
         return view('themes.portfolio.pages.projects', [
             'projects' => $projects,
             'type' => 'project',
