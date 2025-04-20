@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap" rel="stylesheet">
     <link rel="icon" href="{{ asset('themes/portfolio/img/esmail-logo.png') }}" sizes="192x192" />
-    <title>KHAALIFA</title>
+    {!! SEO::generate() !!}
     <link href="{{ asset('themes/portfolio') }}/css/plugins.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('themes/portfolio/css/extra.css') }}">
     <link rel="stylesheet" href="{{ asset('themes/portfolio') }}/css/style.css">
@@ -60,7 +60,6 @@
 
 
         </div>
-
 
         <div class="logo-box v-middle">
             <h3 class="title text-upper">ESMAIL</h3>
