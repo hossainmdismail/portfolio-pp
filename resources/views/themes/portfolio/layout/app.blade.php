@@ -1,9 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-
-<!-- Mirrored from template.dsngrid.com/mexdot/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Feb 2025 06:30:23 GMT -->
-
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
