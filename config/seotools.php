@@ -31,7 +31,7 @@ return [
                 'hire full stack developer',
                 'remote Webflow expert'
             ],
-            'canonical'    => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
+            'canonical'    => true, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'robots'       => 'index, follow', // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
         /*
