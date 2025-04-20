@@ -7,24 +7,36 @@
 return [
     'inertia' => env('SEO_TOOLS_INERTIA', false),
     'meta' => [
-        /*
-         * The default configurations to be used by the meta generator.
-         */
-        'defaults'       => [
-            'title'        => "It's Over 9000!", // set false to total remove
-            'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'For those who helped create the Genki Dama', // set false to total remove
-            'separator'    => ' - ',
-            'keywords'     => [],
-            'canonical'    => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
-            'robots'       => false, // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
+        'defaults' => [
+            'title'        => "Esmail Khalifa - Webflow Expert & Laravel Developer",
+            'titleBefore'  => false,
+            'description'  => 'I’m Esmail Khalifa (Hossain Md Ismail), a Webflow expert and Laravel developer offering freelance and remote services worldwide. Let’s build your next website or web application with modern, responsive, and SEO-friendly design.',
+            'separator'    => ' | ',
+            'keywords'     => [
+                'Esmail Khalifa',
+                'Hossain Md Ismail',
+                'Webflow expert',
+                'Laravel developer',
+                'freelance web developer',
+                'remote web developer',
+                'Webflow freelancer',
+                'hire Webflow designer',
+                'hire Laravel developer',
+                'portfolio developer',
+                'custom website designer',
+                'web developer Bangladesh',
+                'remote full-stack developer',
+                'webflow portfolio expert'
+            ],
+            'canonical'    => 'full',
+            'robots'       => 'index, follow',
         ],
         /*
          * Webmaster tags are always added.
          */
         'webmaster_tags' => [
-            'google'    => null,
-            'bing'      => null,
+            'google'    => env('GOOGLE_VERIFICATION', null),
+            'bing'      => env('BING_VERIFICATION', null),
             'alexa'     => null,
             'pinterest' => null,
             'yandex'    => null,
@@ -38,33 +50,27 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
-            'url'         => false, // Set null for using Url::current(), set false to total remove
-            'type'        => false,
-            'site_name'   => false,
-            'images'      => [],
+            'title'       => 'Esmail Khalifa - Webflow Expert & Laravel Developer',
+            'description' => 'Freelance web developer specializing in Webflow and Laravel. Available for remote projects, portfolio design, and full-stack web development.',
+            'url'         => null,
+            'type'        => 'website',
+            'site_name'   => 'Esmail Khalifa',
+            'images'      => '', // Update with your image path
         ],
     ],
     'twitter' => [
-        /*
-         * The default values to be used by the twitter cards generator.
-         */
         'defaults' => [
-            //'card'        => 'summary',
-            //'site'        => '@LuizVinicius73',
+            'card' => 'summary_large_image',
+            'site' => '@yourtwitterhandle', // optional
         ],
     ],
     'json-ld' => [
-        /*
-         * The default configurations to be used by the json-ld generator.
-         */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
-            'url'         => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
-            'type'        => 'WebPage',
-            'images'      => [],
+            'title'       => 'Esmail Khalifa - Webflow Expert & Laravel Developer',
+            'description' => 'I build modern, responsive, and high-performing websites and applications using Webflow and Laravel. Available for freelance and remote jobs.',
+            'url'         => null,
+            'type'        => 'Person',
+            'images'      => '', // Update as needed
         ],
     ],
 ];
